@@ -18,10 +18,10 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        tf_idf = pickle.load(open('../Pretrained_Models/tfidf_tokenizer.pkl', 'rb'))
-        rf_model = pickle.load(open('../Pretrained_Models/random_forest.pkl', 'rb'))
-        tokenizer = pickle.load(open('../Pretrained_Models/tf_tokenizer.pkl', 'rb'))
-        model = load_model('../Pretrained_Models/lstm.h5', compile=False)
+        tf_idf = pickle.load(open('./Models/tfidf_tokenizer.pkl', 'rb'))
+        rf_model = pickle.load(open('./Models/random_forest.pkl', 'rb'))
+        tokenizer = pickle.load(open('./Models/tf_tokenizer.pkl', 'rb'))
+        model = load_model('./Models/lstm.h5', compile=False)
         text = request.form['text']
         new_text = preprocess_text.clean_text(text)
         vec = tf_idf.transform([new_text])
