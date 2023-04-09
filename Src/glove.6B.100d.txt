@@ -1,0 +1,193 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>glove.6B.100d.txt | Kaggle</title>
+  <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+  <meta name="description" content="Stanford&#x27;s GloVe 100d word embeddings" />
+  <meta name="turbolinks-cache-control" content="no-cache" />
+    <meta name="keywords" content="earth and nature" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  <meta name="theme-color" content="#008ABC" />
+  <script nonce="52u056GQBbdXF6GIq9axKQ==" type="text/javascript">
+    window["pageRequestStartTime"] = 1681038162161;
+    window["pageRequestEndTime"] = 1681038162274;
+    window["initialPageLoadStartTime"] = new Date().getTime();
+  </script>
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" /><link rel="preconnect" href="https://stats.g.doubleclick.net" /><link rel="preconnect" href="https://storage.googleapis.com" /><link rel="preconnect" href="https://apis.google.com" />
+  <link href="/static/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="manifest" href="/static/json/manifest.json" crossorigin="use-credentials">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="preload" as="style" />
+  <link href="https://fonts.googleapis.com/icon?family=Google+Material+Icons&display=block"
+    rel="stylesheet" media="print" id="async-google-font-1" />
+  <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,500,500i,600,600i,700,700i&display=swap"
+    rel="stylesheet" media="print" id="async-google-font-2" />
+  <script nonce="52u056GQBbdXF6GIq9axKQ==" type="text/javascript">
+    const styleSheetIds = ["async-google-font-1", "async-google-font-2"];
+    styleSheetIds.forEach(function (id) {
+      document.getElementById(id).addEventListener("load", function() {
+        this.media = "all";
+      });
+    });
+  </script>
+
+    <link rel="canonical" href="/datasets/danielwillgeorge/glove6b100dtxt" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/vendor.css?v=347bcfc883299a7a24f3" />
+    <link rel="stylesheet" type="text/css" href="/static/assets/app.css?v=132a14c564b12a413ca9" />
+  
+    
+ 
+      <script nonce="52u056GQBbdXF6GIq9axKQ==">
+        try{(function(a,s,y,n,c,h,i,d,e){d=s.createElement("style");
+        d.appendChild(s.createTextNode(""));s.head.appendChild(d);d=d.sheet;
+        y=y.map(x => d.insertRule(x + "{ opacity: 0 !important }"));
+        h.start=1*new Date;h.end=i=function(){y.forEach(x => x<d.cssRules.length ? d.deleteRule(x) : {})};
+        (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
+        })(window,document,['.site-header-react__nav'],'dataLayer',2000,{'GTM-52LNT9S':true});}catch(ex){}
+    </script>
+    <script nonce="52u056GQBbdXF6GIq9axKQ==">
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-12629138-1', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+        gtag('config', 'G-T7QHS60L4Q', {
+            'optimize_id': 'GTM-52LNT9S',
+            'displayFeaturesTask': null,
+            'send_page_view': false,
+            'content_group1': 'Datasets'
+        });
+    </script>
+    <script nonce="52u056GQBbdXF6GIq9axKQ==" async src="https://www.googletagmanager.com/gtag/js?id=UA-12629138-1"></script>
+
+  
+    
+    <meta property="og:url" content="/datasets/danielwillgeorge/glove6b100dtxt" />
+    <meta property="og:title" content="glove.6B.100d.txt" />
+    <meta property="og:description" content="Stanford&#x27;s GloVe 100d word embeddings" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://storage.googleapis.com/kaggle-datasets-images/715814/1246668/cc02e0c5209b7b2b98423573e0157836/dataset-card.png?t=2020-06-17-15-53-56" />
+    <meta property="fb:app_id" content="2665027677054710" />
+
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@kaggledatasets" />
+        <meta name="twitter:creator" content="@danwillgeorge" />
+
+
+  <meta name="twitter:site" content="@Kaggle" /> 
+  
+    
+    <script nonce="52u056GQBbdXF6GIq9axKQ==" type="application/ld+json">{"@context":"http://schema.org/","@type":"Dataset","name":"glove.6B.100d.txt","description":"# Dataset\nThis dataset was created by Daniel Will George\n\n# Contents\n","url":"https://www.kaggle.com/danielwillgeorge/glove6b100dtxt","version":1,"keywords":["subject, earth and nature"],"license":{"@type":"CreativeWork","name":"Unknown","url":""},"identifier":["715814"],"includedInDataCatalog":{"@type":"DataCatalog","name":"Kaggle","url":"https://www.kaggle.com"},"creator":{"@type":"Person","name":"Daniel Will George","url":"https://www.kaggle.com/danielwillgeorge","image":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2052392-kg.jpg"},"distribution":[{"@type":"DataDownload","requiresSubscription":true,"encodingFormat":"zip","fileFormat":"zip","contentUrl":"https://www.kaggle.com/datasets/danielwillgeorge/glove6b100dtxt/download?datasetVersionNumber=1","contentSize":"137847651 bytes"}],"commentCount":0,"dateModified":"2020-06-14T18:43:55.13Z","discussionUrl":"https://www.kaggle.com/danielwillgeorge/glove6b100dtxt/discussion","alternateName":"Stanford's GloVe 100d word embeddings","isAccessibleForFree":true,"thumbnailUrl":"https://storage.googleapis.com/kaggle-datasets-images/715814/1246668/cc02e0c5209b7b2b98423573e0157836/dataset-card.png?t=2020-06-17-15-53-56","interactionStatistic":[{"@type":"InteractionCounter","interactionType":"http://schema.org/CommentAction","userInteractionCount":0},{"@type":"InteractionCounter","interactionType":"http://schema.org/DownloadAction","userInteractionCount":20454},{"@type":"InteractionCounter","interactionType":"http://schema.org/ViewAction","userInteractionCount":73116},{"@type":"InteractionCounter","interactionType":"http://schema.org/LikeAction","userInteractionCount":57}]}</script>
+
+
+  
+    
+
+  
+    
+
+
+    <script nonce="52u056GQBbdXF6GIq9axKQ==">window['useKaggleAnalytics'] = true;</script>
+
+  <script id="gapi-target" nonce="52u056GQBbdXF6GIq9axKQ==" src="https://apis.google.com/js/api.js" defer
+    async></script>
+  <script nonce="52u056GQBbdXF6GIq9axKQ==" src="/static/assets/runtime.js?v=2605830c0da2cb165ee9" data-turbolinks-track="reload"></script>
+  <script nonce="52u056GQBbdXF6GIq9axKQ==" src="/static/assets/vendor.js?v=9cd25589829dad17d1bd" data-turbolinks-track="reload"></script>
+  <script nonce="52u056GQBbdXF6GIq9axKQ==" src="/static/assets/app.js?v=f622553095bf4390ffcb" data-turbolinks-track="reload"></script>
+    <script nonce="52u056GQBbdXF6GIq9axKQ==" type="text/javascript">
+      window.kaggleStackdriverConfig = {
+        key: 'AIzaSyA4eNqUdRRskJsCZWVz-qL655Xa5JEMreE',
+        projectId: 'kaggle-161607',
+        service: 'web-fe',
+        version: 'ci',
+        userId: '0'
+      }
+    </script>
+</head>
+
+<body data-turbolinks="false">
+  <main>
+    
+
+
+
+
+
+<div id="site-container"></div>
+
+<div id="site-body" class="hide">
+    
+
+<div data-component-name="DatasetMaterialContainer" style="display: flex; flex-direction: column; flex: 1 0 auto;"></div><script class="kaggle-component" nonce="52u056GQBbdXF6GIq9axKQ==">var Kaggle=window.Kaggle||{};Kaggle.State=Kaggle.State||[];Kaggle.State.push({"basics":{"datasetId":715814,"slug":"glove6b100dtxt","title":"glove.6B.100d.txt","viewCount":73116,"downloadCount":20454,"scriptCount":148,"owner":{"id":2052392,"imageUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2052392-kg.jpg","name":"Daniel Will George","profileUrl":"/danielwillgeorge","slug":"danielwillgeorge","userTier":"CONTRIBUTOR"},"license":{"id":4,"name":"Unknown"},"overview":"Stanford\u0027s GloVe 100d word embeddings","collaboratorList":{"owner":{"userId":2052392,"profileUrl":"/danielwillgeorge","thumbnailUrl":"https://storage.googleapis.com/kaggle-avatars/thumbnails/2052392-kg.jpg","name":"Daniel Will George","slug":"danielwillgeorge","userTier":"CONTRIBUTOR","type":"OWNER"}},"coverImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/715814/1246668/cc02e0c5209b7b2b98423573e0157836/dataset-cover.png?t=2020-06-17-15-53-56","data":{"totalSize":137847651,"isFileset":true,"canDownload":true,"firestorePath":"hRtcxOShkg2aM0DGH2vu/versions/6bfEbcuccdLyV6oPkMgE","downloadUrl":"/datasets/danielwillgeorge/danielwillgeorge/download?datasetVersionNumber=1","versionId":1278465,"id":735960},"voteCount":57,"medalUrl":"/static/images/medals/datasets/silverl@2x.png","downloadUrl":"/datasets/danielwillgeorge/glove6b100dtxt/download?datasetVersionNumber=1","lastUpdateTime":"2020-06-14T18:43:55.130Z","datasetVersionNumber":1,"creatorDisplayName":"Daniel Will George","cardImageUrl":"https://storage.googleapis.com/kaggle-datasets-images/715814/1246668/cc02e0c5209b7b2b98423573e0157836/dataset-card.png?t=2020-06-17-15-53-56","categories":{"tags":[{"id":7000,"name":"earth and nature","fullPath":"subject \u003E earth and nature","listingUrl":"/datasets?group=public\u0026tagids=7000","description":"","datasetCount":25225,"competitionCount":9,"notebookCount":269,"tagUrl":"/tags/natural-and-physical-sciences","displayName":"Earth and Nature"}]},"datasetExternalUrl":"https://www.kaggle.com/datasets/danielwillgeorge/glove6b100dtxt","ownerTwitter":"danwillgeorge","forumId":730598,"datasetVersionId":1246668,"canCreateTasks":true,"moderationStatus":"PRIVATED_MODERATION_STATUS_NO_ABUSE","lastVersionNumber":1,"diffType":"VERSIONED"}});performance && performance.mark && performance.mark("DatasetMaterialContainer.componentCouldBootstrap");</script><script nonce="52u056GQBbdXF6GIq9axKQ==" type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+    "HTML-CSS": {
+    preferredFont: "TeX",
+    availableFonts: ["STIX", "TeX"],
+    linebreaks: {
+    automatic: true
+    },
+    EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+    inlineMath: [["\\(", "\\)"], ["\\\\(", "\\\\)"]],
+    displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+    processEscapes: true,
+    ignoreClass: "tex2jax_ignore|dno"
+    },
+    TeX: {
+    noUndefined: {
+    attributes: {
+    mathcolor: "red",
+    mathbackground: "#FFEEEE",
+    mathsize: "90%"
+    }
+    }
+    },
+    Macros: {
+    href: "{}"
+    },
+    skipStartupTypeset: true,
+    messageStyle: "none",
+    extensions: ["Safe.js"],
+    });
+</script>
+<script type="text/javascript" nonce="52u056GQBbdXF6GIq9axKQ==">
+  window.addEventListener("DOMContentLoaded", () => {
+    const head = document.getElementsByTagName("head")[0];
+    const useProdHosts = ["www.kaggle.com", "admin.kaggle.com"];
+    const subdomain = useProdHosts.includes(window.location.hostname) ? "www" : "staging";
+
+    const lib = document.createElement("script");
+    lib.type = "text/javascript";
+    lib.src = `https://${subdomain}.kaggleusercontent.com/static/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_HTMLorMML`;
+    head.appendChild(lib);
+  });
+</script>
+
+
+
+
+
+</div>
+
+
+
+
+  </main>
+</body>
+
+</html>
