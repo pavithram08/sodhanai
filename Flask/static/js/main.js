@@ -22,16 +22,16 @@ function getPredictions(text) {
             let outputMsg = "";
 
             if (ml_pred == "1" && dl_pred == "1") {
-                outputMsg = "Message is a suicide ideation";
+                outputMsg = "Message is promoting Terrorism ideation";
             } else if (ml_pred == "0" && dl_pred == "0") {
-                outputMsg = "Mesage is not realted to suicide ideation";
+                outputMsg = "Message is not promoting any Terrorism ideation";
             } else if (
                 (ml_pred == "0" && dl_pred == "1") ||
                 (ml_pred == "1" && dl_pred == "0")
             ) {
-                outputMsg = "Mesage may be or may not be related suicide ideation";
+                outputMsg = "Message may be or may not be related terrorism ideation";
             } else {
-                outputMsg = "Sorry, Unable to understand";
+                outputMsg = "Sorry, Can't figure out";
             }
 
             $("#new-res").append(`
