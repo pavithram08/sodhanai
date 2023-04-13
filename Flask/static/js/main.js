@@ -34,7 +34,7 @@ function getPredictions(text) {
             ) {
                 outputMsg = "Message may be or may not be related terrorism ideation";
             } else {
-                outputMsg = "Message is a Terrorism ideation";
+                outputMsg = "Message is not a Terrorism ideation";
             }
 
             $("#new-res").append(`
