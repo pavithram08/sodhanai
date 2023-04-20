@@ -32,14 +32,14 @@ def predict():
         vec = tf_idf.transform([new_text])
         ml_pred = rf_model.predict(vec)
         ml_pred = int(ml_pred[0])
-        " " "
+        
         new_text = preprocess_text.clean_text(text)
         sequence = tokenizer.texts_to_sequences([new_text])
         padded_sequence = pad_sequences(sequence, padding='post')
         dl_pred = model.predict(padded_sequence)
         dl = dl_pred[0][0]
         dl = int(dl > 0.5)
-        " " "
+        
         return jsonify({"status": 200, "ml_pred": json.dumps(dl), "ml_pred": json.dumps(ml_pred)})
     except:
         pass
