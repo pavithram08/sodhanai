@@ -5,6 +5,8 @@ import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.models import load_model
+from keras.preprocessing import sequence
+from sklearn.feature_extraction.text import TfidfVectorizer
 import pickle
 
 app = Flask(__name__)
@@ -23,6 +25,9 @@ def predict():
         tokenizer = pickle.load(open('./Models/tf_tokenizer.pkl', 'rb'))
         model = load_model('./Models/lstm.h5', compile=False)
         text = request.form['text']
+        tokenizer = Tokenizer(num_words=1000)
+        tokenizer.fit_on_texts(text)
+        sequences = tokenizer.texts_to_sequences(text)
         new_text = preprocess_text.clean_text(text)
         vec = tf_idf.transform([new_text])
         ml_pred = rf_model.predict(vec)
