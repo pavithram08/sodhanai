@@ -61,8 +61,8 @@
 
         </main>
 
-        <form class="msger-inputarea" onsubmit="event.preventDefault()">
-            <input type="text" class="msger-input" placeholder="Enter your message..." id="user-input" autocomplete="off">
+        <form class="msger-inputarea" action="/predict" method="POST" onsubmit="event.preventDefault()">
+            <input type="text" class="msger-input" placeholder="Enter your message..." id="user-input" autocomplete="off" name="text">
             <button type="submit" class="msger-send-btn" onclick="submitHandler()">
                 Send</button>
         </form>
