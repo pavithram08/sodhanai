@@ -23,9 +23,9 @@ function getPredictions(text) {
 
             console.log(ml_pred)
             console.log(dl_pred)
- if (ml_pred == "1") {
+ if (ml_pred == 1) {
                 outputMsg = "Message is a Terrorism ideation";
-            } else if (ml_pred == "0") {
+            } else if (ml_pred == 0) {
                 outputMsg = "Message is not realted to terrorism ideation";
             
             } else {
