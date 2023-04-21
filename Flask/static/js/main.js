@@ -17,7 +17,7 @@ function getPredictions(text) {
             let time = new Date();
             let hour = time.getHours();
             let minute = time.getMinutes();
-            var ml_pred = res.ml_pred;
+            var ml_pred = parseInt(res.ml_pred);;
             var dl_pred = res.dl_pred;
             let outputMsg = "";
 
