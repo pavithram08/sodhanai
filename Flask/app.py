@@ -40,7 +40,7 @@ def predict():
         dl = dl_pred[0][0]
         dl = int(dl > 0.5)
         
-        return jsonify({"status": 200, "ml_pred": json.dumps(dl), "ml_pred": json.dumps(ml_pred)})
+        return jsonify({"status": 200,"ml_pred": json.dumps(ml_pred)})
     except:
         pass
 
