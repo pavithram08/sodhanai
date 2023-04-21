@@ -23,14 +23,8 @@ function getPredictions(text) {
 
             console.log(ml_pred)
             console.log(dl_pred)
-
-            if (ml_pred == "1") {
-                outputMsg = "Message is a Terrorism ideation";
-            } else if (ml_pred == "0") {
-                outputMsg = "Message is not realted to terrorism ideation";
-            } else {
-                outputMsg = "Sorry,can't figure out!";
-            }
+if ml_pred not in [0, 1]:
+    return jsonify({"status": 422, "message": "Invalid prediction value"})
 
             $("#new-res").append(`
       <div class="msg right-msg">
