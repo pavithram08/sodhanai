@@ -23,7 +23,7 @@ function getPredictions(text) {
 
             console.log(ml_pred)
             console.log(dl_pred)
- if (ml_pred == 1) {
+ if (ml_pred == "1") {
                 outputMsg = "Message is a Terrorism ideation";
             
             
