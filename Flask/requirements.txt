@@ -7,7 +7,7 @@ Keras-Preprocessing
 nltk==3.5
 numpy
 SciPy==1.7.3
-
+Flask-Cors
 scikit-learn==0.22.2.post1
 tensorflow==2.10.0
 tensorflow-cpu~=2.10.0
