@@ -31,7 +31,7 @@ function getPredictions(text) {
                 outputMsg = "Sorry,can't figure out!";
             }
 
-            $("#new-res").html(`
+            $("#new-res").append(`
       <div class="msg right-msg">
       <div class="msg-img"
       style="background-image: url(https://cdn-icons-png.flaticon.com/512/163/163847.png)">
