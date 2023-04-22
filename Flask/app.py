@@ -21,7 +21,7 @@ def home():
 @app.route('/predict', methods=['POST'])
 # @cross_origin()
 def predict():
-    print(request.method)
+   
     try:
         tf_idf = pickle.load(open('./Models/tfidf_tokenizer.pkl', 'rb'))
         rf_model = pickle.load(open('./Models/random_forest.pkl', 'rb'))
