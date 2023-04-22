@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, render_template, request
 import json
+import logging
 import preprocess_text
 import tensorflow as tf
 from tensorflow.keras.preprocessing.sequence import pad_sequences
@@ -10,7 +11,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import pickle
 
 app = Flask(__name__)
-
+logging.basicConfig(filename='app.log', level=logging.ERROR)
 
 @app.route('/', methods=['GET'])
 def home():
@@ -41,11 +42,11 @@ def predict():
         dl = int(dl > 0.5)
         
         return jsonify({"status": 200,"ml_pred": json.dumps(ml_pred)})
-    except:
-        pass
-
-    return jsonify({"status": 422, "message": "Internal Server Error"})
-
+   except Exception as e:
+        # log the error message
+        logging.error(str(e))
+        # return a JSON response with more information about the error
+        return jsonify({"status": 500, "message": "Internal Server Error: " + str(e)})
 
 if __name__ == '__main__':
     app.run(debug=True)
