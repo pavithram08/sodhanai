@@ -10,7 +10,7 @@ import pickle
 
 
 app = Flask(__name__)
-cors = CORS(app, resources={r"/predict": {"origins": "https://sodhanai.onrender.com//predict"}})
+cors = CORS(app, resources={r"/predict": {"origins": "https://sodhanai.onrender.com/predict"}})
 
 
 @app.route('/', methods=['GET'])
