@@ -42,10 +42,8 @@ def predict():
         dl = int(dl > 0.5)
         
         return jsonify({"status": 200,"ml_pred": json.dumps(ml_pred)})
-   except Exception as e:
-        # log the error message
+    except Exception as e:
         logging.error(str(e))
-        # return a JSON response with more information about the error
         return jsonify({"status": 500, "message": "Internal Server Error: " + str(e)})
 
 if __name__ == '__main__':
