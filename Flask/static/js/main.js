@@ -14,25 +14,24 @@ function getPredictions(text) {
         crossDomain: true,
         success: function(res) {
             console.log(res);
+
             let time = new Date();
             let hour = time.getHours();
             let minute = time.getMinutes();
-            var ml_pred = parseInt(res.ml_pred);;
+            var ml_pred = parseInt(res.ml_pred);
             var dl_pred = res.dl_pred;
             let outputMsg = "";
 
-            console.log(ml_pred)
-            console.log(dl_pred)
- if (ml_pred == "1") {
+            if (ml_pred == 1) {
                 outputMsg = "Message is a Terrorism ideation";
-            
-            
-            } else {
+            } else if (ml_pred == 0) {
                 outputMsg = "Message is not realted to terrorism ideation";
+
+            } else {
+                outputMsg = "Sorry,can't figure out!";
             }
 
-
-            $("#new-res").append(`
+            $("#new-res").html(`
       <div class="msg right-msg">
       <div class="msg-img"
       style="background-image: url(https://cdn-icons-png.flaticon.com/512/163/163847.png)">
@@ -50,9 +49,7 @@ function getPredictions(text) {
     </div>
     
     <div class="msg left-msg">
-    <div class="msg-img"
-    style="background-image: url(https://cdn-icons-png.flaticon.com/512/163/163847.png)">
-    
+    <div class="msg-img"style="background-image: url(https://cdn-icons-png.flaticon.com/512/163/163847.png)">
     </div>
     
     <div class="msg-bubble">
