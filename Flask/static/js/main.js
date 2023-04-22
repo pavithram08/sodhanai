@@ -1,7 +1,7 @@
 let time = new Date();
 let hour = time.getHours();
 let minute = time.getMinutes();
-const url = "https://sodhanai.onrender.com/";
+const url = "https://sodhanai.onrender.com";
 $(".set-time").text(`${hour}:${minute}`);
 
 function getPredictions(text) {
