@@ -32,9 +32,7 @@ def predict():
         vec = tf_idf.transform([new_text])
         ml_pred = rf_model.predict(vec)
         ml_pred = int(ml_pred[0])
-        print(f"ML Prediction: {ml_pred}")
-        print("Data type of ml_pred:", type(ml_pred))
-
+       
        
         return jsonify({"status": 200,"ml_pred": json.dumps(ml_pred)})
     except:
